@@ -1,0 +1,657 @@
+/* 노트북 버전 */
+@media screen and (max-width: 1600px){
+
+}
+/* 태블릿 버전 */
+@media screen and (max-width:1280px){
+    header {
+        height: 100px;
+        background-color: rgba(0,0,0,0.2);
+    }
+    header .header_wrap {
+        padding: 1.2vw 4vw;
+    }
+    header .header_wrap .logo {
+        width:15vw;
+        height: 7vw;
+    }
+    header .header_wrap nav {
+        display: none;
+    }
+    header .header_wrap .menu {
+        width: 3vw;
+         height: 3vw;
+    }
+    /* (태블릿).s1 */
+    section {height: auto;}
+    section.s1 {height: 100vh;}
+    section.s1 .swiper .swiper-slide {
+        background-size: cover;
+        background-position:  center;
+    }
+    section.s1 .swiper .swiper-slide .main_txt {
+        line-height: 4.5vw;
+    }
+    section.s1 .swiper .swiper-slide .main_txt h1 {
+        font-size: 4vw;
+    }
+    section.s1 .swiper .swiper-slide .main_txt p {
+        font-size: 2vw;
+    }
+
+    /* (태블릿) .s2 */
+    section.s2 .center {
+        width:80vw; 
+    }
+    section.s2 .center .harvest {
+        text-align: center;
+    }
+    section.s2 .harvest_img {
+        transition-delay:0.5s ;
+    }
+    section.s2 .center span {
+        font-size: 2vw;
+    }
+    section.s2 .center h1 {
+        font-size: 3.5vw;
+    }
+    section.s2 .center p {
+        font-size: 2.2vw;
+        line-height: 3.5vw;
+        margin-top: 2.5vw;
+        text-align: center;
+    }
+    /* (태블릿) .s3 */
+    section.s3 {
+        height: auto;
+    }
+    section.s3 .swiper {
+        height: 45vw;
+    }
+    section.s3 .swiper .swiper-slide {
+        height: 40vw;
+    }
+    section.s3 .swiper .swiper-slide .p-top {
+        height: 4vw;
+        margin-bottom: 23vw;
+    }
+    section.s3 .center {
+        width: 100%;
+    }
+    section.s3 .center .best_txt span {
+        font-size: 2vw;
+    }
+    section.s3 .center .best_txt h1 {
+        margin-bottom: 5vw;
+    }
+    
+
+    section.s3 .product .mySwiper2 h3 {
+        font-size: 2.5vw; 
+        padding-bottom: 0.5vw;
+    }
+    section.s3 .product .mySwiper2 .p_bottom h3 {
+        font-size: 1.4vw;
+        line-height: 3vw;
+        color: #eee;
+        
+    }
+    /* swiper 슬라이드의 스크롤바 보임 */
+    section.s3 .swiper .swiper-pagination {
+        display: block; /*보임*/
+        /* height: 5px; */
+        width: 70%;
+        left:50%;
+        transform:translateX(-50%);
+        bottom:0;
+        
+    }
+    section.s3 .swiper-horizontal > .swiper-pagination-bullets {
+        bottom:0;
+        
+    }
+    section.s3 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        background-color: #eee;
+        opacity:1;
+        width: 12.5%;
+        border-radius: 0;
+        height:3px;
+        margin:0;
+        
+    }
+    section.s3 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+        background-color: #99A799;
+        opacity: 1;
+    }
+
+    /* s4 */
+    section.s4 {
+        height: auto;
+        margin-top: 15vw;
+    }
+    section.s4 .center {
+        width: 96%;
+        margin:0 auto;
+    }
+    
+    /* section.s4 .center > h3 {
+        right: 50%;
+        transform: translateX(-50%);
+        top:0;
+        
+    } */
+    section.s4 .center .s4_title p {
+        font-size: 2vw;
+        
+    }
+    section.s4 .center .s4_title h1 {
+        font-size: 4vw;
+    }
+    section.s4 .center .row .col-sm-12 {
+        height:auto;
+    }
+    section.s4 .center .row .col-sm-12 .s4_img {
+        width:45vw;
+        margin-top: 10vw;
+    }
+    section.s4 .center .row .col-sm-12 .s4_des {
+        z-index: 100;
+        /* right: 8vw; */
+        bottom:-15vw;
+        padding-right: 50vw;
+       
+    }
+    section.s4 .center .row .col-6 p {
+        font-size: 2vw;
+    }
+    section.s4 .center .row .col-sm-12 .s4_des h3 {
+        font-size: 1.8vw;
+        line-height: 3vw;
+    }
+    section.s4 .center .row .s4_left .s4_des {
+        bottom: 0;
+        right: 8vw; /**/
+    }
+    section.s4 .center .row .s4_right .s4_img {
+        float:left; /*s4 오른쪽 이미지 정렬*/
+        /* margin-top: 40vw; */
+    }
+    section.s4 .center .row .s4_right .s4_des{
+        /* left:10vw; */
+        left: auto;
+        bottom:0;
+        text-align: left;
+        
+    }
+    /* s4 애니메이션 */
+    section.s4 .s4_ani3 {
+        margin-right: 0;
+        margin-left:-5vw;
+        opacity: 0;
+        transition: all 1s;
+        transition-delay: 0.5s;
+    }
+    section.s4 .s4_ani3.active {
+        opacity: 1;
+        margin-left: 0;
+    }
+    section.s4 .s4_ani4 {
+        margin-left: auto;
+        right: 0vw;
+        opacity: 0;
+        transition: all 1s;
+        transition-delay: 1.5s;
+    }
+    section.s4 .s4_ani4.active {
+        opacity: 1;
+        right: 7.5vw;
+
+    }
+
+    /* section.s4 .center .row .col-sm-12 {
+        height: auto;
+    } */
+
+    /* .s5  아코디언 메뉴 */
+    section.s5 {
+        /* height: 90vh; */
+        padding-top: 15vw;
+    }
+    section.s5 .center {
+        width: 100%;
+        margin: 0 auto;
+    }
+    section.s5 .center h2 {
+        font-size: 2.3vw;
+        margin-top: 10vw;
+    }
+    section.s5 .center .acc {
+        margin-top: 10vw;
+        flex-flow: row wrap;
+    }
+    section.s5 .center .acc .acc_item {
+        width: 48%;
+        margin-bottom: 2vw;
+    }
+    section.s5 .center .acc .acc_item h1 {
+        font-size: 2.6vw;
+    }
+
+    /* s6 인스타 instagram */
+    section.s6 {
+        /* height: 50vh; */
+        padding-bottom: 10vw;
+    }
+    section.s6 .center {
+        width: 70%;
+        margin:0 auto;
+        margin-top: 10vw;
+    }
+    section.s6 .list ul li {
+        width: 31%;
+      
+    }
+    section.s6 .list ul li:first-child {
+        display: none;
+    }
+    section.s6 .list ul li:last-child {
+        display:none;
+    }
+    /* s7 (sitemap) */
+
+    section.s7 {
+        height: 155vh;
+        background-color: #eee;
+    }
+    section.s7 #map_canvas {
+        width: 100%;
+        height: 50vh;
+    }
+    section.s7 .s7_addr {
+        top: 20vw;
+        width: 70%;
+        height: auto;
+        left: 50%;
+        transform:translateX(-50%) ;
+        flex-flow:column nowrap; /*자식 객체를 위아래로 정렬*/
+    }
+    section.s7 .s7_addr .s7_img {
+        background-image: url(../img/width_img.PNG);
+        width: 100%;
+        height: 30vw;
+        
+    }
+    section.s7 .s7_addr .s7_info .s7_icon {
+        width: 4vw;
+        padding: 0.5vw;
+    }
+    section.s7 .s7_addr .s7_info {
+        padding: 3vw 4vw;
+    }
+    section.s7 .s7_addr .s7_info p {
+        font-size: 2.5vw;
+    }
+    section.s7 .s7_addr .s7_info h2 {
+        font-size: 3vw;
+    }
+    section.s7 .s7_addr .s7_info address {
+        font-size: 2vw;
+    }
+    section.s7 .s7_addr .s7_info .call p {
+        font-size:2vw; ;
+    }
+    section.s7 .s7_addr .s7_info .email p {
+        font-size: 2vw;
+    }
+    /* footer */
+    footer { height:auto; }
+    footer .center {
+        width: 100%;
+        padding: 3vw 0;
+        flex-flow: column nowrap; 
+    }
+    footer .center .footer_logo {
+        order :3; 
+        /* display : flex에서 순서를 정하는 것. 3번째로 나열되는 것 */
+        width: 20vw;
+        margin: 0 auto;
+    }
+    footer .center .footer_txt {
+        margin-left:20%;
+        order:2;
+
+    }
+    footer .center .footer_txt p  {
+        order:2;
+        width: 100%;
+        font-size: 2.2vw;
+        line-height: 3vw;
+        white-space: nowrap;
+        
+        
+    }
+    footer .center .footer_txt .cr {
+        margin-bottom: 5vw;
+    }
+    footer .center .footer_site {
+        order:1;
+        width: 50vw;
+        height: 5vw;
+        margin:0 auto;
+        margin-bottom:5vw;
+    }
+   
+    footer .center .footer_site .sns {
+        width: 6vw; 
+    }
+    footer .center .footer_site .family {
+        margin-top: 1vw;
+        height: 4vw;
+    }
+    
+    footer .center .footer_site .family a {
+        font-size: 1.4vw;
+    }
+
+    footer .center .footer_site .family a:first-child {
+        font-size: 1.4vw;
+        padding-left: 2.6vw;
+    }
+    footer .center .footer_site .family.active {
+        height: 8vw; 
+    }
+
+    /* site map 주메뉴 */
+
+    .sitemap {
+        background-color: #fff;
+        top:0;
+        right: -100vw;
+        opacity: 1;
+        left:auto;
+        overflow: auto;
+    }
+    .sitemap.active {
+        right: 0;
+    }
+    .sitemap .site_logo  {
+        float:left;
+        width: 15vw;
+        
+    }
+    .sitemap .site_close {
+        width: 4vw;
+        margin-top: 2vw;
+        right: 7.5vw;
+    }
+    .sitemap .site_nav {
+        margin-top: 12vw;
+    }
+    .sitemap .site_nav ul {
+        flex-flow: column nowrap;
+    }
+    .sitemap .site_nav ul li a {
+        font-size: 2.2vw;
+        text-align: left;
+        color: #111;
+        padding: 2vw 0;
+        border-bottom:1px solid #ccc;
+    }
+    /* 서브메뉴 */
+    .sitemap .site_nav .sub {
+        display: none;
+        padding: 2vw 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .sitemap .site_nav .sub li {
+        margin:0;
+    }
+    .sitemap .site_nav .sub li a {
+        text-align: left;
+        font-size: 1.8vw;
+        border-bottom: none;
+        display: block;
+        padding: 0.7vw;
+    }
+    .sitemap .site_nav > ul > li:hover > a:after {
+        width: 0;
+    }
+    .sitemap .site_nav > ul > li > a:active {
+        color:#99A799;
+    }
+
+}
+/* 모바일 버전 */
+@media screen and (max-width: 767px){
+    header {
+        height: 60px;
+        
+    }
+    header .header_wrap {
+        padding: 2vw 2vw;
+    }
+    header .header_wrap .logo {
+        width:30vw;
+    }
+    header .header_wrap .menu {
+        width: 6vw;
+        height: 5vw;
+    }
+    /* s1 */
+    section.s1 {height: 80vh;}
+    section.s1 .swiper .swiper-slide .main_txt h1 {
+        font-size: 4.3vw;
+    }
+    section.s1 .swiper .swiper-slide .main_txt p {
+        font-size: 3vw;
+    }
+    /* s2 */
+    section.s2 .center {
+        width:100%;
+    }
+    section.s2 .center .row {
+        margin-left:0;
+    }
+    section.s2 .center .row span {
+        font-size: 3vw;
+    }
+    section.s2 .center h1 {
+        font-size: 4.3vw;
+    }
+    section.s2 .center p {
+        font-size: 3vw;
+        line-height: 3.5vw;
+        margin: 3vw 0;
+        text-align: center;
+    }
+    section.s2 .center .row .harvest_img {
+        width: 100%;
+    }
+    /* s3 */
+    section.s3 {
+        height: 70vh;
+    }
+    section.s3 .swiper {
+        height:60vh;
+    }
+    section.s3 .swiper .swiper-slide {
+        height:50vh;
+    }
+    section.s3 .swiper .swiper-slide .p_top {
+        margin-bottom:40vw;
+    }
+    section.s3 .swiper .swiper-slide .p_top h3 {
+        font-size:3vw;
+    }
+    section.s3 .swiper .swiper-slide .p_bottom h3 {
+        font-size:2.4vw;
+    }
+    section.s3 .center .best_txt span {
+        font-size: 3vw;
+    }
+    section.s3 .center .best_txt h1 {
+        font-size: 4.5vw;
+    }
+    section.s3 .swiper .swiper-pagination {
+        width:90%;
+    }
+
+    /* s4 */
+    section.s4 .center .s4_title p {
+        font-size: 3vw;
+        text-align: left;
+    }
+    section.s4 .center .s4_title h1 {
+        font-size: 4.5vw;
+        text-align: left;
+    }
+    section.s4 .center .row .col-6 {
+       margin-top: 12vw;
+    }
+    section.s4 .center .row .col-6 .s4_img  {
+        width: 100%;
+        
+    }
+    section.s4 .center .row .col-6 .s4_des {
+        width: 100%;
+        left: 0;
+        bottom:-20vw;
+    }
+    section.s4 .center .row .col-6 .s4_des p {
+        font-size: 3vw;
+    }
+    section.s4 .center .row .col-6 .s4_des h3 {
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+    /* s5 */
+    section.s5 .center h2 {
+        margin-top: 30vw;
+        font-size: 3.5vw;
+        line-height: 4.5vw;
+    }
+    section.s5 .center .acc {
+        width: 100%;
+        flex-flow: column wrap;
+        
+    }
+    section.s5 .center .acc .acc_item {
+        width: 100%;
+        height: 60vw;
+    }
+    section.s5 .center .acc .acc_item h1 {
+        font-size: 4.5vw;
+        margin-top:12%;
+    }
+    /* s6 인스타 */
+    section.s6 {
+        height: 80vh;
+    }
+    section.s6 .center {
+        width:90%;
+    }
+    section.s6 .center .list {
+        width: 100%;
+    }
+    section.s6 .center .list ul li {
+        width:49%;
+    }
+    section.s6 .center .list ul li a {
+        width: 40vw;
+        padding: 5vw;
+    }
+    /* section.s7 지도 */
+    section.s7 #map_canvas {
+        width: 100%;
+        height: 100vh;
+    }
+    section.s7 .s7_addr {
+        top: 90vw;
+        width: 90%;
+        height: 70vh;
+        left: 50%;
+        transform:translateX(-50%) ;
+        flex-flow:column nowrap; /*자식 객체를 위아래로 정렬*/
+    }
+    section.s7 .s7_addr .s7_img {
+        height: 25vh;
+    }
+    section.s7 .s7_addr .s7_info .s7_icon {
+        width: 8vw;
+    }
+    section.s7 .s7_addr .s7_info p {
+        margin-top:1vw;
+        font-size: 3.5vw;
+    }
+    section.s7 .s7_addr .s7_info h2 {
+        font-size: 4vw;
+    }
+    section.s7 .s7_addr .s7_info address {
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+    section.s7 .s7_addr .s7_info .call p {
+        font-size: 3.5vw;
+    }
+    section.s7 .s7_addr .s7_info .email p {
+        font-size: 3.5vw;
+    }
+   
+    /* footer */
+
+    footer {
+        /* height: 40vh; */
+        padding:10vw 0;
+
+    }
+    
+    footer .center .footer_logo {
+        width: 30vw;
+       
+    }
+    footer .center {width: 100%;}
+    footer .center .footer_txt {
+        /* margin-top: 10vw;
+        margin-left: 0; */
+        width:90%;
+        margin:10vw auto;
+    }
+    footer .center .footer_txt p {
+        font-size: 3vw;
+        line-height: 4vw;
+        white-space:normal;
+        text-align: center;
+    }
+    footer .center .footer_site .sns{
+        width: 10vw;
+       
+    }
+    footer .center .footer_site .family {
+        width: 23vw;
+        height: 5vw;
+       
+    }
+    footer .center .footer_site .family.active {
+        height: 12vw; 
+    }
+
+    /* sitemap */
+    .sitemap .site_logo  {
+      
+        width: 22vw;
+
+    }
+    .sitemap .site_nav {
+        margin-top: 17vw;
+    }
+    .sitemap .site_nav ul li a {
+        font-size: 3.2vw;
+        padding: 2.7vw 0;
+        
+    }
+    .sitemap .site_nav .sub li a {
+       
+        font-size: 2.5vw;
+    }
+    
+}

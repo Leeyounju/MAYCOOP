@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <title>MAYCOOP</title>
+    <!-- 파비콘 -->
+    <link href="img/favicon.png" type="image/icon" rel="shortcut icon">
+    <!-- 부트스트랩 css cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- swiper css cdn -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- awesome icon cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- 외부 css -->
+    <link href="css/main.css"type="text/css" rel="stylesheet">
+    <link href="css/media_main.css"type="text/css" rel="stylesheet">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- 부트스트랩 js cdn -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- 스와이퍼 js cdn -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- 외부 js -->
+    <script src="js/main.js"></script>
+    <!-- 구글지도 api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=ko"></script>
+
+    <script> 
+        function initialize() { 
+      var myLatlng = new google.maps.LatLng(37.441824292506325, 127.18008761328244); // 좌표값
+        var mapOptions = { 
+              zoom: 14, // 지도 확대레벨 조정
+              center: myLatlng, 
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+        } 
+        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions); 
+        var marker = new google.maps.Marker({ 
+      position: myLatlng, 
+      map: map, 
+      title: "MAY COOP" // 마커에 마우스를 올렸을때 간략하게 표기될 설명글
+      }); 
+        } 
+      window.onload = initialize;
+      </script>
+
+</head>
+<body>
+    <div class="wrap">
+        <header>
+           <div class="header_wrap">
+               <!-- 메뉴 active 하기 위해서 한번 더 감쌌음. -->
+                <div class="logo">
+                    <a href="index.html"></a>
+                    <!-- 로고 이미지 배경으로 넣을 것 -->
+                </div>
+                <nav>   
+                    <ul>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">SHOPING</a>
+                            <ul class="sub">
+                                <li><a href="#">라인별</a></li>
+                                <li><a href="#">제품유형별</a></li>
+                                <li><a href="#">피부고민별</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">ABOUT</a>
+                            <ul class="sub">
+                                <li><a href="#">STORY</a></li>
+                                <li><a href="#">MEDIA</a></li>
+                                <li><a href="#">STORE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">COMMUNITY</a>
+                            <ul class="sub">
+                                <li><a href="#">FNQ</a></li>
+                                <li><a href="#">Q&A</a></li>
+                                <li><a href="#">REVEIW</a></li>
+                                <li><a href="#">NOTICE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">EVENT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu">
+                    <a href="#"></a>
+                    <!-- 두가지 버전이라 이미지 배경으로 넣음 -->
+                </div>
+                <!-- 서브 배경 -->
+                <div class="sub_bg"></div>
+           </div>
+        </header>
+        <section class="s1">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide main1">
+                      <div class="main_txt txt1">
+                            <h1>지리산에서 길어 올린 맑고 깊은 광채 보습</h1> <br>
+                            <p><span>로우 소스 더 비건</span><br><br>
+                            Moisturizing the clear and deep glow from Jirisan Mountain.</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide main2">
+                      <div class="main_txt ">
+                        <h1>쫀쫀한 탄력 보습 포도나무 수액</h1> <br> <br>
+                       <p> VINE LINE | 바인 라인</p>
+                      </div>
+                    
+                  </div>
+                  <div class="swiper-slide main3">
+                    <div class="main_txt">
+                        <h1>진정 보습 대나무수액</h1> <br> <br>
+                        <p>BAMBOO LINE | 뱀부 라인</p> 
+                    </div>
+                   
+                  </div>
+                  <div class="swiper-slide main4">
+                    <div class="main_txt">
+                        <h1>속깊은 보습 단풍나무수액</h1> <br> <br>
+                        <p>RAW LINE | 로우 라인</p> 
+                    </div>
+                    
+                  </div>
+              
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                    
+              </div>
+        </section>
+        <section class="s2">
+            <div class="center container">
+                <div class="row">
+                    <div class="col-lg-6 harvest">
+                         <span>일년에 한 번</span><br><h1> 단 한 번 수액 채취 시기</h1> <br>
+                            <p>유기농 천연 추출물의 정성어린 수확, 그리고 <br>
+                                각종 유기농 관련 검사를 거쳐, 총 525,600분의 정성과 <br>
+                                기다림이 쌓여 슬러우 미라클, 메이쿱 제품들이 탄생합니다. <br> <br>
+                                
+                                It's an organic natural extract that's sincere harvest. <br>
+                                After various organic tests, a total of 525,600 people worked hard, <br>
+                                You can wait for them to create products for Slough Miracle and Maycoop.</p>
+                            
+                    </div>
+                    <div class="col-lg-6 harvest_img">
+                        <img src="img/s1.PNG" alt="product">
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="s3">
+            <div class="center">
+                <div class="best_txt fade_animation">
+                    <span>메이쿱 베스트</span>
+                <h1>BEST PRODUCT</h1>
+                </div>
+                
+                <div class="product up_animation">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide p1">
+                              <div class="p_top">
+                                <h3>Essence</h3>
+                                <i><img src="img/plus.png" alt="플러스"></i>
+                              </div>
+                              <div class="p_bottom">
+                                <h3>로우 소스 에센스 150ml <br>
+                                    #수액에센스 #항산화 #고보습</h3>
+                              </div>
+                          </div>
+                          <div class="swiper-slide p2">
+                            <div class="p_top">
+                                <h3>Serum</h3>
+                                <i><img src="img/plus.png" alt="플러스"></i>
+                              </div>
+                              <div class="p_bottom">
+                                <h3>로우 엑티베이터 세럼 <br>
+                                    #수액세럼 #피부활력 #집중영양</h3>
+                              </div>
+                          </div>
+                          <div class="swiper-slide p3">
+                            <div class="p_top">
+                                <h3>Mist</h3>
+                                <i><img src="img/plus.png" alt="플러스"></i>
+                              </div>
+                              <div class="p_bottom">
+                                <h3>로우 모닝 듀 미스트 <br>
+                                #수액미스트 #수분공급 #보습보호막</h3>
+                              </div>
+                          </div>
+                          <div class="swiper-slide p4">
+                            <div class="p_top">
+                                <h3>Sunscreen</h3>
+                                <i><img src="img/plus.png" alt="플러스"></i>
+                              </div>
+                              <div class="p_bottom">
+                                <h3>로우 유브이 쉴드 크림 선스크린 <br>
+                                    #수액선크림 #3중기능성</h3>
+                              </div>
+                          </div>
+                          <div class="swiper-slide p5">
+                            <div class="p_top">
+                                <h3>Clean Bar</h3>
+                                <i><img src="img/plus.png" alt="플러스"></i>
+                              </div>
+                              <div class="p_bottom">
+                                <h3>#천연유래 계면활성제# 약산성비누# 올인원</h3>
+                              </div>
+                          </div>
+                          <div class="swiper-slide p6">
+                            <div class="p_top">
+                                <h3>Moisturizer</h3>
+                                <i><img src="img/plus.png" alt="플러스"></i>
+                              </div>
+                              <div class="p_bottom">
+                                <h3>피부에 즉각적인 수분 충전 수액 수분크림 <br>
+                                    #수액수분크림# 데일리수분케어# 촉촉한피부</h3>
+                              </div>
+                          </div>
+                          <div class="swiper-slide p7">
+                            <div class="p_top">
+                                <h3>Serum</h3>
+                                <i><img src="img/plus.png" alt="플러스"></i>
+                              </div>
+                              <div class="p_bottom">
+                                <h3>민감한 피부의 해답 대나무 수액 세럼<br>
+                                    #5in1세럼# 지복합추천# EWG그린등급향&21FREE</h3>
+                              </div>
+                          </div>
+                          <div class="swiper-slide p8">
+                            <div class="p_top">
+                                <h3>Lotion</h3>
+                                <i><img src="img/plus.png" alt="플러스"></i>
+                              </div>
+                              <div class="p_bottom">
+                                <h3>수액 56% 넣은 수액로션 <br>
+                                    #피부진정# 수분보습# EWG그린등급향&21FREE</h3>
+                              </div>
+                          </div>
+                          
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                    
+            </div>
+        </section>
+        <section class="s4">
+            <div class="center">
+                <div class="s4_title fade_animation">
+                  <p>오랜 기다림과 정성으로 만들어낸 물오른 아름다움</p>
+                <h1>MAYCOOP</h1>  
+                </div>
+                
+                <div class="row">
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 s4_left">
+                        <div class="s4_img s4_ani1">
+                            <img src="img/1.png" alt="이슬">
+                        </div>
+                        <div class="s4_des s4_ani2">
+                            <p>#대자연을 품은 한 방울</p>
+                             <h3>나무와 식물이 여름의 더위와 겨울의 혹한과 싸우며, <br>
+                            열매를 맺기 위해 대지에서 흡수한 영양분의 결정체, 수액의 단 <br>
+                            한 방울에는 대자연 생명력의 비밀이 고스란히 담겨 있습니다.</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 s4_right">
+                         <div class="s4_img s4_ani3">
+                            <img src="img/2.png" alt="생명의 탄생">
+                        </div>
+                        <div class="s4_des s4_ani4">
+                            <p>#아름다움을 품은 생명의 탄생 </p>
+                               <h3>아무것도 보이지 않던 땅에서 새싹이 <br>
+                                돋아나고, 성장하며, 인내하고, 열매 맺는 과정을<br> 통해서진짜 생명력있는 아름다움은 탄생합니다.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s5">
+            <div class="center">
+                <h2 class="up ">한 방울 한 방울 시간이 채취한 <br>
+                    우리 자연에서 발견한 피부해법, 메이쿱</h2>
+                <div class="acc up_animation">
+                    <!-- 배경으로 넣음 -->
+                    <div class="acc_item acc1">
+                        <h1>단풍나무 수액 </h1><br>
+                          <p>깊고 빠른 보습</p>  
+                    </div>
+                    <div class="acc_item acc2">
+                        <h1>대나무수액</h1> <br>
+                         <p>진정과 자극완화</p>   
+                    </div>
+                    <div class="acc_item acc3 active">
+                        <h1>포도나무 수액</h1> <br>
+                          <p>주름과 탄력</p>  
+                          <div class="acc_btn">
+                              <p>more<i> →</i></p>
+                          </div>
+                    </div>
+                    <div class="acc_item acc4">
+                        <h1>자작나무 수액</h1> <br>
+                         <p>미백과 밝은 톤</p> 
+                           
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s6">
+            <div class="center">
+                <div class="list">
+                    <ul>
+                        <li class="up_animation">
+                            <a href="#">
+                                <img src="img/insta1.png" alt="insta1">
+                            </a>
+                        </li>
+                        <li class="up_animation">
+                            <a href="#">
+                                <img src="img/insta2.png" alt="insta2">
+                            </a>
+                        </li>
+                        <li class="up_animation">
+                            <a href="#">
+                                <img src="img/insta3.png" alt="insta3">
+                            </a>
+                        </li>
+                        <li class="up_animation">
+                            <a href="#">
+                                <img src="img/insta4.png" alt="insta4">
+                            </a>
+                        </li>
+                        <li class="up_animation up_delay">
+                            <a href="#">
+                                <img src="img/insta5.png" alt="insta5">
+                            </a>
+                        </li>
+                        <li class="up_animation">
+                            <a href="#">
+                                <img src="img/insta6.png" alt="insta6">
+                            </a>
+                        </li>
+                        <li class="up_animation">
+                            <a href="#">
+                                <img src="img/insta7.png" alt="insta7">
+                            </a>
+                        <li class="up_animation up_delay">
+                                <a href="#">
+                                    <img src="img/insta8.png" alt="insta8">
+                                </a>
+                        </li>
+                        <!-- 아이디는 똑같은 이름 줄 수 없다 -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s7">
+            <div id="map_canvas"></div>
+            <div class="s7_addr up_animation">
+                <!-- 왼쪽 이미지는 배경으로 들어감 -->
+                <div class="s7_img">
+                 
+                </div>
+
+                <div class="s7_info">
+                    <div class="s7_icon">
+                        <img src="img/favicon.png" alt="새싹">
+                    </div>
+                    <p>메이쿱</p>
+                     <h2> MAY COOP</h2><br>
+                    <address>상대원동 67-3 <br>
+                        7 Sunhwan-ro, Seongnam-si, Gyeonggi-do<br><br></address>
+                    <div class="call">
+                        <p>Call<br>
+                            070-7510-7510 <br><br></p>
+                    </div>
+                    <div class="email">
+                        <p>Email <br>
+                            help.maycoop@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                <div class="footer_logo">
+                    <a href="#"><img src="img/logo-white.png" alt="로고"></a>
+                </div>
+                <div class="footer_txt">
+                    <p>한 여름의 더위와 겨울의 혹한을 이겨낸 대자연 생명력의 결정체 <br>
+                        우리 몸에 가까운 수액을 담다.</p> <br>
+                    <p class="en">The essence of the natural vitality that overcame <br>
+                        the heat of summer and the cold of winter. Put fluids close to our bodies.</p><br>
+                    <p class="cr">Copyright 2020 © (주)메이쿱 All Right Reserved.</p>
+                    </div>
+                <div class="footer_site">
+                    <div class="sns">
+                       <a href="#">
+                        <img src="img/insta_icon.png" alt="인스타 아이콘">
+                        </a>  
+                    </div>
+                   <div class="family">
+                       
+                            <a href="#" class="fa_btn">Family </a>
+                        
+                            <a href="#">메이쿱 온라인 쇼핑몰</a>  
+                       
+                       
+                   </div>
+                </div>
+            </div>
+        </footer>
+        <!-- top 버튼 -->
+        <div class="top">TOP</div>
+    </div>
+    <!-- 사이트 맵 -->
+    <div class="sitemap">
+        <div class="site_logo">
+            <img src="img/logo-white.png" alt="사이트맵 로고">
+        </div>
+        <div class="site_close">
+            <a href="#"><img src="img/close.png" alt="닫기"></a>
+        </div>
+        <nav class="site_nav">
+            <ul>
+                <li>
+                    <!-- 주메뉴 -->
+                    <a href="#">SHOPING</a>
+                    <ul class="sub">
+                        <li><a href="#">라인별</a></li>
+                        <li><a href="#">제품유형별</a></li>
+                        <li><a href="#">피부고민별</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 주메뉴 -->
+                    <a href="#">ABOUT</a>
+                    <ul class="sub">
+                        <li><a href="#">STORY</a></li>
+                        <li><a href="#">MEDIA</a></li>
+                        <li><a href="#">STORE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 주메뉴 -->
+                    <a href="#">COMMUNITY</a>
+                    <ul class="sub">
+                        <li><a href="#">FNQ</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">REVEIW</a></li>
+                        <li><a href="#">NOTICE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 주메뉴 -->
+                    <a href="#">EVENT</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <div class="site_sns">
+           
+            <a href="#"><img src="img/insta_icon.png" alt="인스타 아이콘"></a>
+        </div> -->
+    </div>
+</body>
+</html>
